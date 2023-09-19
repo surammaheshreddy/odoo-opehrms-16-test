@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Define the action for your school student records -->
+        <record id="action_student" model="ir.actions.act_window">
+            <field name="name">Student</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">school.student</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create School Details
+                </p>
+            </field>
+        </record>
+
+        <!-- Define the menu item for school student records -->
+        <menuitem id="school_exams_menu" parent="school_menu" name="Class" action="action_student" sequence="10"/>
+    </data>
+</odoo>
